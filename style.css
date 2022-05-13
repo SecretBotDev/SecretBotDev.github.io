@@ -19,7 +19,7 @@ h1 {
     color: #ff79c6;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5, q {
     font-weight: 400;
 }
 
@@ -69,8 +69,13 @@ a {
     padding: 5px;
     min-width: 210px;
     width: 0;
+    height: 400px;
     margin: 0 10px 10px;
     position: relative;
+}
+
+.gallery-item h4 {
+    margin-bottom: 5px;
 }
 
 .gallery-item .pfp {
@@ -91,6 +96,6 @@ a {
 .socials {
     position: absolute;
     bottom: 5px;
-    width: 100%;
+    width: calc(100% - 10px);
     height: 20px;
 }
