@@ -70,6 +70,7 @@ a {
     min-width: 210px;
     width: 0;
     margin: 0 10px 10px;
+    position: relative;
 }
 
 .gallery-item .pfp {
@@ -85,4 +86,10 @@ a {
 }
 .gallery-item .name *{
     margin: 0px;
+}
+
+.socials {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
