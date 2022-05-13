@@ -76,3 +76,10 @@ a {
     width: 200px;
     border-radius: 5px;
 }
+
+.gallery-item .name {
+    margin: 1em;
+}
+.gallery-item .name *{
+    margin: 0px;
+}
