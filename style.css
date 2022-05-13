@@ -72,9 +72,12 @@ a {
     margin: 0 10px 10px;
 }
 
-.gallery-item img {
+.gallery-item .pfp {
     width: 200px;
     border-radius: 5px;
+}
+.gallery-item .socials *{
+    width: 20px;
 }
 
 .gallery-item .name {
