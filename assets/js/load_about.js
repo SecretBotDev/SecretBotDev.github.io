@@ -1,34 +1,44 @@
 !(async () => {
-	const { icons, users } =
-		(localStorage.getItem('UserStore') && JSON.parse(localStorage.UserStore))
-		?? await fetch('/about/data.json').then(
-			(res) => res.json
+	const { users } =
+		(
+			localStorage.getItem('UserStore')
+			&& window.query.get('nocache')
+			&& JSON.parse(localStorage.UserStore)
+		)
+		|| await fetch('/assets/about.json').then(
+			(res) => res.json()
 		);
 
+	console.log(users);
+
 	localStorage.setItem('UserStore', JSON.stringify({
-		icons, users
+		users
 	}));
 
 	function createConnection(type, username) {
 		const img = document.createElement('img');
-		img.src = icons[type];
+		img.src = '/assets/img/' + type + '.svg';
+		img.alt = `${type} icon`;
 
 		const elem = document.createElement("a");
 		switch (type) {
 			case 'github': {
-				elem.href = `https://github.com/${name}`;
+				elem.href = `https://github.com/${username}`;
 				elem.target = '_blank';
+				break;
 			}
 			case 'discord': {
 				elem.href = '#';
 				elem.onclick = function (event) {
 					event.preventDefault();
 					navigator.clipboard.writeText(username);
-					elem.textContent = '[]Copied!]';
+					elem.textContent = '[Copied!]';
 					setTimeout(() => {
-						elem.textContent = username;
-					});
+						elem.textContent = undefined;
+						elem.appendChild(img);
+					}, 2000);
 				};
+				break;
 			}
 		}
 
@@ -37,13 +47,19 @@
 		return elem;
 	}
 
+	function createIcon(type, id) {
+		return type === 'github' ? `https://avatars.githubusercontent.com/u/${id}` : type;
+	}
+
 	for (const user of users) {
+		console.log(user);
+
 		const div = document.createElement('div');
 		div.className = 'gallery-item';
 
 		const icon = document.createElement('img');
-		icon.src = user.icon;
-		icon.alt = user.username;
+		icon.src = createIcon(...user.icon.split(':'));
+		icon.alt = `${user.alt}'s avatar`;
 		icon.className = 'pfp';
 
 		div.appendChild(icon);
@@ -78,7 +94,7 @@
 		/**
 		 * @type {HTMLAnchorElement[]}
 		 */
-		const connections = user.connections.map(conn => createConnection(conn.type, conn.username));
+		const connections = user.connections.map(conn => createConnection(conn.type, conn.name));
 
 		const socials = document.createElement('div');
 		socials.className = 'socials';

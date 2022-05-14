@@ -1,2 +1,3 @@
 # SecretBoatDev.github.io
-## this is a repo for the official SBD website.
+
+Website for Secret Bot Development

@@ -9,6 +9,8 @@
 		if (!data.ok) element.textContent = 'Error while fetching component';
 
 		// FIXME: remove this insecure usage of innerHTML
-		element.innerHTML = data;
+		element.innerHTML = await data.text();
 	}
 })();
+
+window.query = new URLSearchParams(window.location.search);
