@@ -1,5 +1,5 @@
 function includeHTML() {
-	var z, i, elmnt, file, xhttp;
+	let z, i, elmnt, file, xhttp;
 	/*loop through a collection of all HTML elements:*/
 	z = document.getElementsByTagName("*");
 	for (i = 0; i < z.length; i++) {
@@ -20,8 +20,6 @@ function includeHTML() {
 			}
 			xhttp.open("GET", file, true);
 			xhttp.send();
-			/*exit the function:*/
-			return;
 		}
 	}
 };
