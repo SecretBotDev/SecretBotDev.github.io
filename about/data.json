@@ -1,0 +1,24 @@
+{
+	"icons": {
+		"github": "assets/github.svg",
+		"discord": "assets/discord.svg"
+	},
+	"users": [
+		{
+			"username": "Oakchris1955",
+			"name": "Chris",
+			"icon": "github:80592203",
+			"bio": "Just a random Greek that likes Python",
+			"connections": [
+				{
+					"type": "github",
+					"name": "Oakchris1955"
+				},
+				{
+					"type": "discord",
+					"name": "Oakchris1955🇬🇷#5015"
+				}
+			]
+		}
+	]
+}

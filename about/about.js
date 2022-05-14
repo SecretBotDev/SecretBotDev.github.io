@@ -1,30 +1,94 @@
-function show_info() {
-	fetch('userinfo.json').then(response => {
-		return response.json();
-	}).then(data => {
-		//save the icon's URL
-		let icons = {};
-		for (let icon in data.Icons) {
-			icons[icon] = data.Icons[icon]
-		}
+!(async () => {
+	const { icons, users } =
+		(localStorage.getItem('UserStore') && JSON.parse(localStorage.UserStore))
+		?? await fetch('/about/data.json').then(
+			(res) => res.json
+		);
 
+	localStorage.setItem('UserStore', JSON.stringify({
+		icons, users
+	}));
 
-		//save the user info
-		let userinfo = data.Users
+	function createConnection(type, username) {
+		const img = document.createElement('img');
+		img.src = icons[type];
 
-		//loop through the user info and add them to page
-		for (username in userinfo) {
-			let user = userinfo[username];
-			let social = ``;
-			for (connection in user.Connections) {
-				social += `<a href="${user.Connections[connection]}"><img src="${icons[connection]}"></a>`;
+		const elem = document.createElement("a");
+		switch (type) {
+			case 'github': {
+				elem.href = `https://github.com/${name}`;
+				elem.target = '_blank';
 			}
-
-			let userstring = `<div class="gallery-item"><img class="pfp" src="${user.UserIcon}" alt="${username}"><br><div class="name"><h3 class="firstName">${user.FirstName}</h3><h4 class="alias">${username}</h4></div><div class="description"><h4>${user.About}</h4></div><div class="socials">${social}</div></div>`;
-			document.getElementById('gallery').innerHTML = userstring;
+			case 'discord': {
+				elem.href = '#';
+				elem.onclick = function (event) {
+					event.preventDefault();
+					navigator.clipboard.writeText(username);
+					elem.textContent = '[]Copied!]';
+					setTimeout(() => {
+						elem.textContent = username;
+					});
+				};
+			}
 		}
-	}).catch(err => {
-		// Do something for an error here
-	});
-}
-show_info()
+
+		elem.appendChild(img);
+
+		return elem;
+	}
+
+	for (const user of users) {
+		const div = document.createElement('div');
+		div.className = 'gallery-item';
+
+		const icon = document.createElement('img');
+		icon.src = user.icon;
+		icon.alt = user.username;
+		icon.className = 'pfp';
+
+		div.appendChild(icon);
+		div.appendChild(document.createElement('br'));
+
+		const nameDiv = document.createElement('div');
+		nameDiv.className = 'name';
+
+		const firstName = document.createElement('h3');
+		firstName.className = 'firstName'; // TODO: consistency
+		firstName.textContent = user.name;
+
+		nameDiv.appendChild(firstName);
+
+		const alias = document.createElement('h4');
+		alias.className = 'alias';
+		alias.textContent = user.username;
+
+		nameDiv.appendChild(alias);
+
+		div.appendChild(nameDiv);
+
+		const descriptionDiv = document.createElement('div');
+		descriptionDiv.className = 'description';
+
+		const description = document.createElement('h4');
+		description.textContent = user.bio;
+
+		descriptionDiv.appendChild(description);
+		div.appendChild(descriptionDiv);
+
+		/**
+		 * @type {HTMLAnchorElement[]}
+		 */
+		const connections = user.connections.map(conn => createConnection(conn.type, conn.username));
+
+		const socials = document.createElement('div');
+		socials.className = 'socials';
+
+		for (const connection of connections) {
+			socials.appendChild(connection);
+		}
+
+		div.appendChild(socials);
+
+		document.getElementById('gallery').appendChild(div);
+	}
+})();
