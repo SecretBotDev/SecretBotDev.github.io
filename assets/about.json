@@ -56,7 +56,7 @@
                 ]
             },
             "avatar": "github:67709748",
-            "about":{
+            "about": {
                 "bio": "Avid learner and Rust, TypeScript, Elixir developer.",
                 "quote": ""
             },
@@ -77,7 +77,7 @@
                 ]
             },
             "avatar": "github:74307083",
-            "about":{
+            "about": {
                 "bio": "So I'm another stupid guy from the internet that sucks at programming but has an interesting and funny life",
                 "quote": "I love volleyball"
             },
@@ -97,7 +97,7 @@
                 ]
             },
             "avatar": "github:90388353",
-            "about":{
+            "about": {
                 "bio": "",
                 "quote": ""
             },
@@ -120,7 +120,7 @@
                 ]
             },
             "avatar": "github:80592203",
-            "about":{
+            "about": {
                 "bio": "Just a random Greek that likes Python",
                 "quote": ""
             },
@@ -144,7 +144,7 @@
                 ]
             },
             "avatar": "github:20734229",
-            "about":{
+            "about": {
                 "bio": "",
                 "quote": ""
             },
@@ -154,6 +154,25 @@
                     "handle": "dcrime"
                 }
             ]
-        }
+        },
+        {
+            "names": {
+                "displayName": "Tobi",
+                "aliases": [
+                    "CreepyTobi"
+                ]
+            },
+            "avatar": "github:90388194",
+            "about": {
+                "bio": "",
+                "quote": ""
+            },
+            "connections": [
+                {
+                    "platform": "github",
+                    "handle": "TobiasOdermatt"
+                }
+            ]
+        },
     ]
 }
