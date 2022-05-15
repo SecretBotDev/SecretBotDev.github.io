@@ -39,6 +39,17 @@
 				};
 				break;
 			}
+			case 'gitlab': {
+				elem.href = `https://gitlab.com/${handle}`;
+				elem.target = 'blank';
+				break;
+			}
+			case 'instagram': {
+				elem.href = `https://instagram.com/${handle}`;
+				elem.target = 'blank';
+				break;
+			}
+			}
 		}
 
 		elem.appendChild(img);
