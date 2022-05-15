@@ -1,13 +1,13 @@
 {
-    "team": [
+    "members": [
         {
             "names": {
                 "displayName": "Chris",
-                "alts": [
+                "aliases": [
                     "Oakchris1955"
                 ]
             },
-            "pfp": "github:80592203",
+            "avatar": "github:80592203",
             "bio": "Just a random Greek that likes Python",
             "quote": "",
             "connections": [
