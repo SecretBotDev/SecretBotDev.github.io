@@ -60,6 +60,18 @@
 		return platform === 'github' ? `https://avatars.githubusercontent.com/u/${identifier}` : platform;
 	}
 
+	//Fisher–Yates shuffle by dev.to
+	function shuffle(array) {
+		for (let i = array.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			const temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+		}
+	}
+	
+	shuffle(members);
+
 	for (const member of members) {
 
 		const div = document.createElement('div');
