@@ -83,7 +83,7 @@ a {
     border-radius: 5px;
 }
 .gallery-item .socials *{
-    width: 20px;
+    height: 20px;
 }
 
 .gallery-item .name {
@@ -98,4 +98,8 @@ a {
     bottom: 5px;
     width: calc(100% - 10px);
     height: 20px;
+}
+
+.socials img {
+    margin: 0 5px;
 }
