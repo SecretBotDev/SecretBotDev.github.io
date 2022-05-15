@@ -6,5 +6,12 @@
 			"{\n    \"names\": {\n        \"displayName\": \"\",\n        \"aliases\": [\n            \"\"\n        ]\n    },\n    \"avatar\": \"\",\n    \"bio\": \"\",\n    \"quote\": \"\",\n    \"connections\": [\n        {\n            \"platform\": \"\",\n            \"handle\": \"\"\n        },\n        {\n            \"platform\": \"\",\n            \"handle\": \"\"\n        }\n    ]\n},"
 		],
 		"description": "add a new member entry"
+	},
+	"connection": {
+		"scope": "json, jsonc",
+		"prefix": "connection",
+		"body":[
+			"{\n    \"platform\": \"\",\n    \"handle\": \"\"\n},"
+		]
 	}
 }
