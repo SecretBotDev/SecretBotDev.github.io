@@ -173,6 +173,29 @@
                     "handle": "TobiasOdermatt"
                 }
             ]
+        },
+        {
+            "names": {
+                "displayName": "Pablo",
+                "aliases": [
+                    "0x4d65"
+                ]
+            },
+            "avatar": "github:68614669",
+            "about": {
+                "bio": "Linux enjoyer, can do some basic programming, buberto's tech support",
+                "quote": ""
+            },
+            "connections": [
+                {
+                    "platform": "github",
+                    "handle": "0x4d65"
+                },
+                {
+                    "platform": "discord",
+                    "handle": "0x4d65#3339"
+                }
+            ]
         }
     ]
 }
