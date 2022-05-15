@@ -93,10 +93,12 @@
 		const bio = document.createElement('h4');
 		bio.textContent = member.bio;
 
-		bio.appendChild(document.createElement('br'));
-		bio.appendChild(document.createElement('br'))
-		bio.appendChild(document.createElement('q')).textContent = member.quote;
-		
+		if(member.quote){
+			bio.appendChild(document.createElement('br'));
+			bio.appendChild(document.createElement('br'))
+			bio.appendChild(document.createElement('q')).textContent = member.quote;	
+		}
+				
 
 		bioDiv.appendChild(bio);
 
