@@ -3,7 +3,7 @@
 		"scope": "json, jsonc",
 		"prefix": "member",
 		"body": [
-			"{\n    \"names\": {\n        \"displayName\": \"\",\n        \"aliases\": [\n            \"\"\n        ]\n    },\n    \"avatar\": \"\",\n    \"bio\": \"\",\n    \"quote\": \"\",\n    \"connections\": [\n        {\n            \"platform\": \"\",\n            \"handle\": \"\"\n        },\n        {\n            \"platform\": \"\",\n            \"handle\": \"\"\n        }\n    ]\n},"
+			"{\n    \"names\": {\n        \"displayName\": \"\",\n        \"aliases\": [\n            \"\"\n        ]\n    },\n    \"avatar\": \"\",\n    \"bio\": \"\",\n    \"quote\": \"\",\n    \"connections\": [\n        {\n            \"platform\": \"\",\n            \"handle\": \"\"\n        }\n    ]\n},"
 		],
 		"description": "add a new member entry"
 	},
