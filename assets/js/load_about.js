@@ -49,7 +49,6 @@
 				elem.target = 'blank';
 				break;
 			}
-			}
 		}
 
 		elem.appendChild(img);
