@@ -69,7 +69,7 @@ a {
     padding: 5px;
     min-width: 210px;
     width: 0;
-    height: 410px;
+    height: 420px;
     margin: 0 10px 10px;
     position: relative;
 }
@@ -78,7 +78,7 @@ a {
     margin-bottom: 5px;
 }
 
-.gallery-item .pfp {
+.gallery-item .avatar {
     width: 200px;
     border-radius: 5px;
 }
