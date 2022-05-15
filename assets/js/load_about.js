@@ -1,28 +1,28 @@
 !(async () => {
-	const { users } =
+	const { members } =
 		(
-			localStorage.getItem('UserStore')
+			localStorage.getItem('memberStore')
 			&& window.query.get('nocache')
-			&& JSON.parse(localStorage.UserStore)
+			&& JSON.parse(localStorage.memberStore)
 		)
 		|| await fetch('/assets/about.json').then(
 			(res) => res.json()
 		);
 
 
-	localStorage.setItem('UserStore', JSON.stringify({
-		users
+	localStorage.setItem('memberStore', JSON.stringify({
+		members
 	}));
 
-	function createConnection(type, username) {
+	function createConnection(platform, handle) {
 		const img = document.createElement('img');
-		img.src = '/assets/img/' + type + '.svg';
-		img.alt = `${type} icon`;
+		img.src = '/assets/img/' + platform + '.svg';
+		img.alt = `${platform} icon`;
 
 		const elem = document.createElement("a");
-		switch (type) {
+		switch (platform) {
 			case 'github': {
-				elem.href = `https://github.com/${username}`;
+				elem.href = `https://github.com/${handle}`;
 				elem.target = '_blank';
 				break;
 			}
@@ -30,7 +30,7 @@
 				elem.href = '#';
 				elem.onclick = function (event) {
 					event.preventDefault();
-					navigator.clipboard.writeText(username);
+					navigator.clipboard.writeText(handle);
 					elem.textContent = '[Copied!]';
 					setTimeout(() => {
 						elem.textContent = undefined;
@@ -46,53 +46,60 @@
 		return elem;
 	}
 
-	function createIcon(type, id) {
-		return type === 'github' ? `https://avatars.githubusercontent.com/u/${id}` : type;
+	function createAvatar(platform, identifier) {
+		return platform === 'github' ? `https://avatars.githubusercontent.com/u/${identifier}` : platform;
 	}
 
-	for (const user of users) {
+	for (const member of members) {
 
 		const div = document.createElement('div');
 		div.className = 'gallery-item';
 
-		const icon = document.createElement('img');
-		icon.src = createIcon(...user.icon.split(':'));
-		icon.alt = `${user.alt}'s avatar`;
-		icon.className = 'pfp';
+		const avatar = document.createElement('img');
+		avatar.src = createAvatar(...member.avatar.split(':'));
+		avatar.alt = `${member.names.displayName}'s avatar`;
+		avatar.className = 'avatar';
 
-		div.appendChild(icon);
+		div.appendChild(avatar);
 		div.appendChild(document.createElement('br'));
 
 		const nameDiv = document.createElement('div');
 		nameDiv.className = 'name';
 
-		const firstName = document.createElement('h3');
-		firstName.className = 'firstName'; // TODO: consistency
-		firstName.textContent = user.name;
+		const displayName = document.createElement('h3');
+		displayName.className = 'displayName'; // TODO: consistency
+		displayName.textContent = member.names.displayName;
 
-		nameDiv.appendChild(firstName);
+		nameDiv.appendChild(displayName);
 
 		const alias = document.createElement('h4');
 		alias.className = 'alias';
-		alias.textContent = user.username;
+		alias.textContent = member.names.alts;
 
-		nameDiv.appendChild(alias);
+		member.names.aliases.forEach(alias => {
+			const element = document.createElement('h4');
+			element.className = 'alias';
+			element.textContent = alias;
+			nameDiv.appendChild(element);
+		});
+
+		
 
 		div.appendChild(nameDiv);
 
-		const descriptionDiv = document.createElement('div');
-		descriptionDiv.className = 'description';
+		const bioDiv = document.createElement('div');
+		bioDiv.className = 'bio';
 
-		const description = document.createElement('h4');
-		description.textContent = user.bio;
+		const bio = document.createElement('h4');
+		bio.textContent = member.bio;
 
-		descriptionDiv.appendChild(description);
-		div.appendChild(descriptionDiv);
+		bioDiv.appendChild(bio);
+		div.appendChild(bioDiv);
 
 		/**
 		 * @type {HTMLAnchorElement[]}
 		 */
-		const connections = user.connections.map(conn => createConnection(conn.type, conn.name));
+		const connections = member.connections.map(conn => createConnection(conn.platform, conn.handle));
 
 		const socials = document.createElement('div');
 		socials.className = 'socials';
