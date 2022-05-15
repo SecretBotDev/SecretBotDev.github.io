@@ -1,38 +1,25 @@
 {
-	"users": [
-		{
-			"username": "Oakchris1955",
-			"name": "Chris",
-			"icon": "github:80592203",
-			"alt": "chris",
-			"bio": "Just a random Greek that likes Python",
-			"connections": [
-				{
-					"type": "github",
-					"name": "Oakchris1955"
-				},
-				{
-					"type": "discord",
-					"name": "Oakchris1955🇬🇷#5015"
-				}
-			]
-		},
-		{
-			"username": "Splatterxl",
-			"name": "Splatter",
-			"icon": "github:67709748",
-			"alt": "splatterxl",
-			"bio": "An avid learner and Rust, TypeScript developer",
-			"connections": [
-				{
-					"type": "github",
-					"name": "splatterxl"
-				},
-				{
-					"type": "discord",
-					"name": "Splatterxl#8999"
-				}
-			]
-		}
-	]
+    "team": [
+        {
+            "names": {
+                "displayName": "Chris",
+                "alts": [
+                    "Oakchris1955"
+                ]
+            },
+            "pfp": "github:80592203",
+            "bio": "Just a random Greek that likes Python",
+            "quote": "",
+            "connections": [
+                {
+                    "platform": "github",
+                    "handle": "Oakchris1955"
+                },
+                {
+                    "platform": "discord",
+                    "handle": "Oakchris1955#5015"
+                }
+            ]
+        }
+    ]
 }
