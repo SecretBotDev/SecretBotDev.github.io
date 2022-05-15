@@ -9,7 +9,6 @@
 			(res) => res.json()
 		);
 
-	console.log(users);
 
 	localStorage.setItem('UserStore', JSON.stringify({
 		users
@@ -52,7 +51,6 @@
 	}
 
 	for (const user of users) {
-		console.log(user);
 
 		const div = document.createElement('div');
 		div.className = 'gallery-item';
