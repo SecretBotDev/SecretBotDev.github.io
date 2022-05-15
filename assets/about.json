@@ -2,6 +2,67 @@
     "members": [
         {
             "names": {
+                "displayName": "Maalos",
+                "aliases": [
+                    "maalos"
+                ]
+            },
+            "avatar": "github:51633285",
+            "bio": "SBD Founder, Front-End developer, Assembly and Brainfuck enthusiast",
+            "quote": "Arch is the best!",
+            "connections": [
+                {
+                    "platform": "github",
+                    "handle": "maalos"
+                }
+            ]
+        },
+        {
+            "names": {
+                "displayName": "Lukas",
+                "aliases": [
+                    "LukasDoesDev"
+                ]
+            },
+            "avatar": "github:51633285",
+            "bio": "Arch Linux enthusiast, Rust programmer, fullstack developer and Discord bot developer.",
+            "quote": "Arch &amp; Rust forever!!!!",
+            "connections": [
+                {
+                    "platform": "github",
+                    "handle": "LukasDoesDev"
+                },
+                {
+                    "platform": "gitlab",
+                    "handle": "LukasDoesDev"
+                },
+                {
+                    "platform": "discord",
+                    "handle": "Lukas#5427"
+                }
+            ]
+        },
+        {
+            "names": {
+                "displayName": "SplatterXL",
+                "aliases": [
+                    "splatterxl",
+                    "splat",
+                    "spl&aumlt"
+                ]
+            },
+            "avatar": "github:74307083",
+            "bio": "Originally a Discord bot developer, now I create small Rust applications.",
+            "quote": "",
+            "connections": [
+                {
+                    "platform": "github",
+                    "handle": "splatterxl"
+                }
+            ]
+        },
+        {
+            "names": {
                 "displayName": "Chris",
                 "aliases": [
                     "Oakchris1955"
