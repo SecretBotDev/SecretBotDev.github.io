@@ -91,12 +91,12 @@
 		bioDiv.className = 'bio';
 
 		const bio = document.createElement('h4');
-		bio.textContent = member.bio;
+		bio.textContent = member.about.bio;
 
-		if(member.quote){
+		if(member.about.quote){
 			bio.appendChild(document.createElement('br'));
 			bio.appendChild(document.createElement('br'))
-			bio.appendChild(document.createElement('q')).textContent = member.quote;	
+			bio.appendChild(document.createElement('q')).textContent = member.about.quote;	
 		}
 				
 

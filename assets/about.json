@@ -8,8 +8,10 @@
                 ]
             },
             "avatar": "github:54448857",
-            "bio": "SBD Founder, Front-End developer, Assembly and Brainfuck enthusiast",
-            "quote": "Arch is the best!",
+            "about": {
+                "bio": "SBD Founder, Front-End developer, Assembly and Brainfuck enthusiast",
+                "quote": "Arch is the best!"
+            },
             "connections": [
                 {
                     "platform": "github",
@@ -25,8 +27,10 @@
                 ]
             },
             "avatar": "github:51633285",
-            "bio": "Arch Linux enthusiast, Rust programmer, fullstack developer and Discord bot developer.",
-            "quote": "Arch &amp; Rust forever!!!!",
+            "about": {
+                "bio": "Arch Linux enthusiast, Rust programmer, fullstack developer and Discord bot developer.",
+                "quote": "Arch &amp; Rust forever!!!!"
+            },
             "connections": [
                 {
                     "platform": "github",
@@ -52,8 +56,10 @@
                 ]
             },
             "avatar": "github:67709748",
-            "bio": "Avid learner and Rust, TypeScript, Elixir developer.",
-            "quote": "",
+            "about":{
+                "bio": "Avid learner and Rust, TypeScript, Elixir developer.",
+                "quote": ""
+            },
             "connections": [
                 {
                     "platform": "github",
@@ -71,8 +77,10 @@
                 ]
             },
             "avatar": "github:74307083",
-            "bio": "So I'm another stupid guy from the internet that sucks at programming but has an interesting and funny life",
-            "quote": "I love volleyball",
+            "about":{
+                "bio": "So I'm another stupid guy from the internet that sucks at programming but has an interesting and funny life",
+                "quote": "I love volleyball"
+            },
             "connections": [
                 {
                     "platform": "github",
@@ -89,8 +97,10 @@
                 ]
             },
             "avatar": "github:90388353",
-            "bio": "",
-            "quote": "",
+            "about":{
+                "bio": "",
+                "quote": ""
+            },
             "connections": [
                 {
                     "platform": "github",
@@ -110,8 +120,10 @@
                 ]
             },
             "avatar": "github:80592203",
-            "bio": "Just a random Greek that likes Python",
-            "quote": "",
+            "about":{
+                "bio": "Just a random Greek that likes Python",
+                "quote": ""
+            },
             "connections": [
                 {
                     "platform": "github",
@@ -132,8 +144,10 @@
                 ]
             },
             "avatar": "github:20734229",
-            "bio": "",
-            "quote": "",
+            "about":{
+                "bio": "",
+                "quote": ""
+            },
             "connections": [
                 {
                     "platform": "github",
