@@ -49,6 +49,11 @@
 				elem.target = '_blank';
 				break;
 			}
+			case 'reddit': {
+				elem.href = `https://reddit.com/u/${handle}`;
+				elem.target = '_blank';
+				break;
+			}
 		}
 
 		elem.appendChild(img);
