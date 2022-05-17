@@ -1,205 +1,205 @@
 {
-    "members": [
-        {
-            "names": {
-                "displayName": "Chris",
-                "aliases": [
-                    "Oakchris1955"
-                ]
-            },
-            "avatar": "github:80592203",
-            "about": {
-                "bio": "Just a random Greek that likes Python",
-                "quote": ""
-            },
-            "connections": [
-                {
-                    "platform": "github",
-                    "handle": "Oakchris1955"
-                },
-                {
-                    "platform": "discord",
-                    "handle": "Oakchris1955#5015"
-                },
+	"members": [
+		{
+			"names": {
+				"displayName": "Chris",
+				"aliases": [
+					"Oakchris1955"
+				]
+			},
+			"avatar": "github:80592203",
+			"about": {
+				"bio": "Just a random Greek that likes Python",
+				"quote": ""
+			},
+			"connections": [
+				{
+					"platform": "github",
+					"handle": "Oakchris1955"
+				},
+				{
+					"platform": "discord",
+					"handle": "Oakchris1955#5015"
+				},
 				{
 					"platform": "reddit",
 					"handle": "Oakchris1955"
 				}
-            ]
-        },
-        {
-            "names": {
-                "displayName": "Daniel",
-                "aliases": [
-                    "dcrime",
-                    "daniel crime"
-                ]
-            },
-            "avatar": "github:20734229",
-            "about": {
-                "bio": "",
-                "quote": ""
-            },
-            "connections": [
-                {
-                    "platform": "github",
-                    "handle": "dcrime"
-                }
-            ]
-        },
-        {
-            "names": {
-                "displayName": "Lukas",
-                "aliases": [
-                    "LukasDoesDev"
-                ]
-            },
-            "avatar": "github:51633285",
-            "about": {
-                "bio": "Arch Linux enthusiast, Rust programmer, fullstack developer and Discord bot developer.",
-                "quote": "Arch &amp; Rust forever!!!!"
-            },
-            "connections": [
-                {
-                    "platform": "github",
-                    "handle": "LukasDoesDev"
-                },
-                {
-                    "platform": "gitlab",
-                    "handle": "LukasDoesDev"
-                },
-                {
-                    "platform": "discord",
-                    "handle": "Lukas#5427"
-                }
-            ]
-        },
-        {
-            "names": {
-                "displayName": "Maalos",
-                "aliases": [
-                    "maalos"
-                ]
-            },
-            "avatar": "github:54448857",
-            "about": {
-                "bio": "SBD Founder, Front-End developer, Assembly and Brainfuck enthusiast",
-                "quote": "Arch is the best!"
-            },
-            "connections": [
-                {
-                    "platform": "github",
-                    "handle": "maalos"
-                }
-            ]
-        },
-        {
-            "names": {
-                "displayName": "Moritz",
-                "aliases": [
-                    "MoDerPo",
-                    "moritztw"
-                ]
-            },
-            "avatar": "github:90388353",
-            "about": {
-                "bio": "",
-                "quote": ""
-            },
-            "connections": [
-                {
-                    "platform": "github",
-                    "handle": "moritz-t-w"
-                },
-                {
-                    "platform": "instagram",
-                    "handle": "moritz_t_w"
-                }
-            ]
-        },
-        {
-            "names": {
-                "displayName": "Pablo",
-                "aliases": [
-                    "0x4d65"
-                ]
-            },
-            "avatar": "github:68614669",
-            "about": {
-                "bio": "Linux enjoyer, can do some basic programming, buberto's tech support",
-                "quote": ""
-            },
-            "connections": [
-                {
-                    "platform": "github",
-                    "handle": "0x4d65"
-                },
-                {
-                    "platform": "discord",
-                    "handle": "0x4d65#3339"
-                }
-            ]
-        },
-        {
-            "names": {
-                "displayName": "Splatter",
-                "aliases": [
-                    "splatterxl",
-                    "splat",
-                    "spl&auml;t"
-                ]
-            },
-            "avatar": "github:67709748",
-            "about": {
-                "bio": "Avid learner and Rust, TypeScript, Elixir developer.",
-                "quote": ""
-            },
-            "connections": [
-                {
-                    "platform": "github",
-                    "handle": "splatterxl"
-                }
-            ]
-        },
-        {
-            "names": {
-                "displayName": "Szymon",
-                "aliases": [
-                    "Hubert",
-                    "Buberto",
-                    "8u83r70"
-                ]
-            },
-            "avatar": "github:74307083",
-            "about": {
-                "bio": "So I'm another stupid guy from the internet that sucks at programming but has an interesting and funny life. Pablo is not my tech support",
-                "quote": "I love volleyball"
-            },
-            "connections": [
-                {
-                    "platform": "github",
-                    "handle": "8u83r70"
-                }
-            ]
-        },
-        {
-            "names": {
-                "displayName": "Tobi",
-                "aliases": [
-                    "CreepyTobi"
-                ]
-            },
-            "avatar": "github:90388194",
-            "about": {
-                "bio": "",
-                "quote": ""
-            },
-            "connections": [
-                {
-                    "platform": "github",
-                    "handle": "TobiasOdermatt"
-                }
-            ]
-        }
-    ]
+			]
+		},
+		{
+			"names": {
+				"displayName": "Daniel",
+				"aliases": [
+					"dcrime",
+					"daniel crime"
+				]
+			},
+			"avatar": "github:20734229",
+			"about": {
+				"bio": "",
+				"quote": ""
+			},
+			"connections": [
+				{
+					"platform": "github",
+					"handle": "dcrime"
+				}
+			]
+		},
+		{
+			"names": {
+				"displayName": "Lukas",
+				"aliases": [
+					"LukasDoesDev"
+				]
+			},
+			"avatar": "github:51633285",
+			"about": {
+				"bio": "Arch Linux enthusiast, Rust programmer, fullstack developer and Discord bot developer.",
+				"quote": "Arch &amp; Rust forever!!!!"
+			},
+			"connections": [
+				{
+					"platform": "github",
+					"handle": "LukasDoesDev"
+				},
+				{
+					"platform": "gitlab",
+					"handle": "LukasDoesDev"
+				},
+				{
+					"platform": "discord",
+					"handle": "Lukas#5427"
+				}
+			]
+		},
+		{
+			"names": {
+				"displayName": "Maalos",
+				"aliases": [
+					"maalos"
+				]
+			},
+			"avatar": "github:54448857",
+			"about": {
+				"bio": "SBD Founder, Front-End developer, Assembly and Brainfuck enthusiast",
+				"quote": "Arch is the best!"
+			},
+			"connections": [
+				{
+					"platform": "github",
+					"handle": "maalos"
+				}
+			]
+		},
+		{
+			"names": {
+				"displayName": "Moritz",
+				"aliases": [
+					"MoDerPo",
+					"moritztw"
+				]
+			},
+			"avatar": "github:90388353",
+			"about": {
+				"bio": "",
+				"quote": ""
+			},
+			"connections": [
+				{
+					"platform": "github",
+					"handle": "moritz-t-w"
+				},
+				{
+					"platform": "instagram",
+					"handle": "moritz_t_w"
+				}
+			]
+		},
+		{
+			"names": {
+				"displayName": "Pablo",
+				"aliases": [
+					"0x4d65"
+				]
+			},
+			"avatar": "github:68614669",
+			"about": {
+				"bio": "Linux enjoyer, can do some basic programming, buberto's tech support",
+				"quote": ""
+			},
+			"connections": [
+				{
+					"platform": "github",
+					"handle": "0x4d65"
+				},
+				{
+					"platform": "discord",
+					"handle": "0x4d65#3339"
+				}
+			]
+		},
+		{
+			"names": {
+				"displayName": "Splatter",
+				"aliases": [
+					"splatterxl",
+					"splat",
+					"spl&auml;t"
+				]
+			},
+			"avatar": "github:67709748",
+			"about": {
+				"bio": "Avid learner and Rust, TypeScript, Elixir developer.",
+				"quote": ""
+			},
+			"connections": [
+				{
+					"platform": "github",
+					"handle": "splatterxl"
+				}
+			]
+		},
+		{
+			"names": {
+				"displayName": "Szymon",
+				"aliases": [
+					"Hubert",
+					"Buberto",
+					"8u83r70"
+				]
+			},
+			"avatar": "github:74307083",
+			"about": {
+				"bio": "So I'm another stupid guy from the internet that sucks at programming but has an interesting and funny life. Pablo is not my tech support",
+				"quote": "I love volleyball"
+			},
+			"connections": [
+				{
+					"platform": "github",
+					"handle": "8u83r70"
+				}
+			]
+		},
+		{
+			"names": {
+				"displayName": "Tobi",
+				"aliases": [
+					"CreepyTobi"
+				]
+			},
+			"avatar": "github:90388194",
+			"about": {
+				"bio": "",
+				"quote": ""
+			},
+			"connections": [
+				{
+					"platform": "github",
+					"handle": "TobiasOdermatt"
+				}
+			]
+		}
+	]
 }
