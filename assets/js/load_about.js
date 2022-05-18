@@ -54,6 +54,12 @@
 				elem.target = '_blank';
 				break;
 			}
+			case 'facebook': {
+				elem.href = `https://www.facebook.com/${handle}`;
+				elem.target = '_blank';
+				break;
+			}
+		
 		}
 
 		elem.appendChild(img);
