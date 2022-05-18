@@ -81,7 +81,7 @@
 		}
 	}
 	
-	members.sort();
+	shuffle(members);
 
 	for (const member of members) {
 
