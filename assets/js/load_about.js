@@ -99,18 +99,14 @@
 
 		nameDiv.appendChild(displayName);
 
-		const alias = document.createElement('h4');
-		alias.className = 'alias';
-		alias.textContent = member.names.alts;
-
-		member.names.aliases.forEach(alias => {
-			const element = document.createElement('h4');
-			element.className = 'alias';
-			element.textContent = alias;
-			nameDiv.appendChild(element);
+		const aliasesHeading = document.createElement('h4');
+		aliasesHeading.className = 'aliases';
+		aliasesHeading.textContent = "";
+		let aliases = member.names.aliases;
+		aliases.forEach(alias => {
+			aliasesHeading.textContent += alias + (typeof aliases[aliases.indexOf(alias)+1] !== 'undefined' ? " ": "")
 		});
-
-		
+		nameDiv.appendChild(aliasesHeading);
 
 		div.appendChild(nameDiv);
 
