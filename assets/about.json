@@ -29,6 +29,25 @@
 		},
 		{
 			"names": {
+				"displayName": "Linus",
+				"aliases": [
+					"Linus Torvalds"
+				]
+			},
+			"avatar": "github:1024025",
+			"about": {
+				"bio": "Our King",
+				"quote": "Fuck you, Nvidia"
+			},
+			"connections": [
+				{
+					"platform": "github",
+					"handle": "torvalds"
+				}
+			]
+		},
+		{
+			"names": {
 				"displayName": "Daniel",
 				"aliases": [
 					"dcrime",
