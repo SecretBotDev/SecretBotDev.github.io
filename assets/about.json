@@ -29,20 +29,20 @@
 		},
 		{
 			"names": {
-				"displayName": "Linus Torvalds",
+				"displayName": "Yuto",
 				"aliases": [
-					"Linyos Torovoltos"
+					"yuto0214w"
 				]
 			},
-			"avatar": "github:1024025",
+			"avatar": "github:46196561",
 			"about": {
-				"bio": "Our King",
-				"quote": "Fuck you, Nvidia"
+				"bio": "Win32 enthusiast, likes cat.",
+				"quote": "My website still supports IE 9. Not mobile tho."
 			},
 			"connections": [
 				{
 					"platform": "github",
-					"handle": "torvalds"
+					"handle": "yuto0214w"
 				}
 			]
 		},
